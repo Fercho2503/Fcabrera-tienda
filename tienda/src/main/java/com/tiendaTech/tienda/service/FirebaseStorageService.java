@@ -80,4 +80,3 @@ public class FirebaseStorageService {
         return String.format("%014d", id);
     }
 }
- 

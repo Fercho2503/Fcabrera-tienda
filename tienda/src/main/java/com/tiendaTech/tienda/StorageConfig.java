@@ -1,5 +1,5 @@
 package com.tiendaTech.tienda;
-
+        
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.StorageOptions;
@@ -28,5 +28,5 @@ public class StorageConfig {
             return StorageOptions.newBuilder().setCredentials(credentials).build().getService();
         }
     }
-
+    
 }

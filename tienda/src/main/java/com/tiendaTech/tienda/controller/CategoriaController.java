@@ -30,7 +30,9 @@ public class CategoriaController {
 
     @GetMapping("/listado")
     public String listado(Model model) {
+        
         var categorias = categoriaService.getCategorias(false);
+        
         model.addAttribute("categorias", categorias);
         model.addAttribute("totalCategorias", categorias.size());
         return "/categoria/listado";
